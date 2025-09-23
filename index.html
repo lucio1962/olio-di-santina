@@ -52,30 +52,21 @@
       text-shadow: 2px 2px 5px black;
     }
     h2 { color: black; margin-bottom: 15px; }
-    .griglia {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 400px;
     }
-    .griglia div {
-      background: #fff;
+    th, td {
       border: 1px solid #ccc;
-      border-radius: 8px;
       padding: 10px;
-      width: 140px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .griglia img {
-      width: 100px;
-      height: auto;
-      display: block;
-      margin: auto;
-    }
+    th { background: #e0e0e0; }
     .btn {
       display: inline-block;
       padding: 12px 20px;
-      margin: 10px;
+      margin: 20px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
@@ -103,7 +94,7 @@
   </nav>
 </header>
 
-<!-- HERO (banner iniziale) -->
+<!-- HERO -->
 <div class="hero">
   Olio Extravergine Artigianale
 </div>
@@ -121,28 +112,24 @@
     <h2>🫒 Acquista</h2>
     <p><strong>Prezzo base:</strong> 15 € / litro</p>
 
-    <div class="griglia">
-      <div>
-        <img src="images/lattina1L.jpg" alt="Lattina 1L">
-        <p>1 L – 15 €</p>
-      </div>
-      <div>
-        <img src="images/lattina2L.jpg" alt="Lattina 2L">
-        <p>2 L – 30 €</p>
-      </div>
-      <div>
-        <img src="images/lattina3L.jpg" alt="Lattina 3L">
-        <p>3 L – 45 €</p>
-      </div>
-      <div>
-        <img src="images/lattina5L.jpg" alt="Lattina 5L">
-        <p>5 L – 75 €</p>
-      </div>
-      <div>
-        <img src="images/lattina10L.jpg" alt="Lattina 10L">
-        <p>10 L – 150 €</p>
-      </div>
-    </div>
+    <!-- FOTO UNICA DELLE LATTINE -->
+    <img src="lattine.jpg" alt="Lattine di olio" style="max-width:90%; border:1px solid #ccc; margin:20px auto; display:block;">
+
+    <!-- TABELLA PREZZI -->
+    <table>
+      <tr><th>Formato</th><th>Prezzo</th></tr>
+      <tr><td>1 L</td><td>15 €</td></tr>
+      <tr><td>2 L</td><td>30 €</td></tr>
+      <tr><td>3 L</td><td>45 €</td></tr>
+      <tr><td>5 L</td><td>75 €</td></tr>
+      <tr><td>10 L</td><td>150 €</td></tr>
+    </table>
+
+    <p>
+      <a class="btn btn-whatsapp"
+         href="https://wa.me/393384461593?text=Vorrei%20ordinare%20OLIO%20DI%20SANTINA"
+         target="_blank">📲 Ordina su WhatsApp</a>
+    </p>
   </section>
 
   <!-- CONTATTI -->
@@ -151,7 +138,7 @@
     <p>Ordina subito via WhatsApp:</p>
     <a class="btn btn-whatsapp"
        href="https://wa.me/393384461593?text=Vorrei%20ordinare%20OLIO%20DI%20SANTINA"
-       target="_blank">📲 Ordina su WhatsApp</a>
+       target="_blank">📲 Chat su WhatsApp</a>
   </section>
 </main>
 
