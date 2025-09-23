@@ -11,42 +11,66 @@
       color: #333;
     }
     header {
-      background: #2e7d32;
-      color: white;
-      padding: 15px;
+      background: linear-gradient(135deg, #fdfdfd, #f2f2f2);
+      padding: 40px 20px;
       text-align: center;
       position: sticky;
       top: 0;
       z-index: 1000;
+      border-bottom: 3px solid #2e7d32;
     }
-    nav { margin-top: 10px; }
+    nav { margin-top: 15px; }
     nav a {
-      color: white;
-      margin: 0 10px;
+      color: #2e7d32;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.1em;
     }
     nav a:hover { text-decoration: underline; }
     main {
       padding: 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       text-align: center;
     }
-    h1, h2 { color: #2e7d32; }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
+    h1 {
+      color: black;
+      font-size: 3em;         /* molto grande */
+      font-weight: bold;
+      margin: 0;
+      letter-spacing: 3px;    /* spaziatura */
+      text-transform: uppercase;
     }
-    th, td {
+    h2 {
+      color: black;
+      font-size: 1.8em;
+      margin-top: 30px;
+    }
+    .griglia {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .griglia div {
+      background: #fff;
       border: 1px solid #ccc;
+      border-radius: 8px;
       padding: 10px;
+      width: 180px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    th { background: #e0e0e0; }
+    .griglia img {
+      width: 150px;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
     .btn {
       display: inline-block;
-      padding: 15px 25px;
+      padding: 12px 20px;
       margin: 10px;
       border-radius: 8px;
       text-decoration: none;
@@ -62,7 +86,6 @@
       padding: 10px;
       margin-top: 30px;
     }
-    section { margin-bottom: 50px; }
   </style>
 </head>
 <body>
@@ -94,32 +117,38 @@
   <!-- OLIO -->
   <section id="olio">
     <h2>🫒 Acquista il nostro olio</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Olive_oil_bottles.jpg/320px-Olive_oil_bottles.jpg"
-         alt="Lattina di olio"
-         style="max-width:300px; border:1px solid #ccc; margin:20px auto; display:block;">
-
     <p><strong>Prezzo base:</strong> 15 € / litro</p>
 
-    <table>
-      <tr><th>Formato</th><th>Prezzo</th></tr>
-      <tr><td>1 L</td><td>15 €</td></tr>
-      <tr><td>2 L</td><td>30 €</td></tr>
-      <tr><td>3 L</td><td>45 €</td></tr>
-      <tr><td>5 L</td><td>75 €</td></tr>
-      <tr><td>10 L</td><td>150 €</td></tr>
-    </table>
+    <div class="griglia">
+      <div>
+        <img src="images/lattina1L.jpg" alt="Lattina 1L">
+        <p>1 L – 15 €</p>
+      </div>
+      <div>
+        <img src="images/lattina2L.jpg" alt="Lattina 2L">
+        <p>2 L – 30 €</p>
+      </div>
+      <div>
+        <img src="images/lattina3L.jpg" alt="Lattina 3L">
+        <p>3 L – 45 €</p>
+      </div>
+      <div>
+        <img src="images/lattina5L.jpg" alt="Lattina 5L">
+        <p>5 L – 75 €</p>
+      </div>
+      <div>
+        <img src="images/lattina10L.jpg" alt="Lattina 10L">
+        <p>10 L – 150 €</p>
+      </div>
+    </div>
 
     <p>
       <a class="btn btn-whatsapp"
          href="https://wa.me/393384461593?text=Vorrei%20ordinare%20OLIO%20DI%20SANTINA"
-         target="_blank">
-         📲 Ordina su WhatsApp
-      </a>
+         target="_blank">📲 Ordina su WhatsApp</a>
       <a class="btn btn-email"
          href="mailto:tuoindirizzo@email.com?subject=Ordine%20Olio%20di%20Santina&body=Vorrei%20ordinare"
-         target="_blank">
-         ✉️ Scrivimi una mail
-      </a>
+         target="_blank">✉️ Scrivimi una mail</a>
     </p>
   </section>
 
@@ -130,14 +159,10 @@
     <p>
       <a class="btn btn-whatsapp"
          href="https://wa.me/393384461593?text=Vorrei%20ordinare%20OLIO%20DI%20SANTINA"
-         target="_blank">
-         📲 Chat su WhatsApp
-      </a>
+         target="_blank">📲 Chat su WhatsApp</a>
       <a class="btn btn-email"
          href="mailto:tuoindirizzo@email.com?subject=Richiesta%20informazioni&body=Buongiorno,%20vorrei%20maggiori%20dettagli"
-         target="_blank">
-         ✉️ Mandami una mail
-      </a>
+         target="_blank">✉️ Mandami una mail</a>
     </p>
   </section>
 </main>
