@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>🌿 OLIO DI SANTINA 🌿</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,59 +12,62 @@
       color: #333;
     }
     header {
-      background: linear-gradient(135deg, #fdfdfd, #f2f2f2);
-      padding: 40px 20px;
+      background: #fff;
+      padding: 15px;
       text-align: center;
+      border-bottom: 2px solid #2e7d32;
       position: sticky;
       top: 0;
       z-index: 1000;
-      border-bottom: 3px solid #2e7d32;
-    }
-    nav { margin-top: 15px; }
-    nav a {
-      color: #2e7d32;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    nav a:hover { text-decoration: underline; }
-    main {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
     }
     h1 {
-      color: black;
-      font-size: 3em;         /* molto grande */
-      font-weight: bold;
       margin: 0;
-      letter-spacing: 3px;    /* spaziatura */
-      text-transform: uppercase;
-    }
-    h2 {
+      font-size: 2em;
       color: black;
-      font-size: 1.8em;
-      margin-top: 30px;
+      font-weight: bold;
     }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 8px;
+      color: #2e7d32;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+    .hero {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/6/6f/Olive_oil_bottles.jpg') center/cover no-repeat;
+      color: white;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px black;
+    }
+    h2 { color: black; margin-bottom: 15px; }
     .griglia {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
+      gap: 15px;
     }
     .griglia div {
       background: #fff;
       border: 1px solid #ccc;
       border-radius: 8px;
       padding: 10px;
-      width: 180px;
+      width: 140px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     .griglia img {
-      width: 150px;
+      width: 100px;
       height: auto;
       display: block;
       margin: auto;
@@ -76,9 +80,9 @@
       text-decoration: none;
       font-weight: bold;
       color: white;
+      font-size: 1.1em;
     }
     .btn-whatsapp { background: #25D366; }
-    .btn-email { background: #FF8C00; }
     footer {
       background: #2e7d32;
       color: white;
@@ -93,30 +97,28 @@
 <header>
   <h1>🌿 OLIO DI SANTINA 🌿</h1>
   <nav>
-    <a href="#home">Home</a>
     <a href="#info">Info</a>
     <a href="#olio">Acquista</a>
     <a href="#contatti">Contatti</a>
   </nav>
 </header>
 
-<main>
-  <!-- HOME -->
-  <section id="home">
-    <h2>Benvenuto</h2>
-    <p>Scopri il nostro olio extravergine di qualità. Naviga tra le sezioni.</p>
-  </section>
+<!-- HERO (banner iniziale) -->
+<div class="hero">
+  Olio Extravergine Artigianale
+</div>
 
+<main>
   <!-- INFO -->
   <section id="info">
     <h2>ℹ️ Info</h2>
-    <p>L'olio di Santina è prodotto artigianalmente con olive selezionate.</p>
-    <p>Questa è una versione statica del sito, sempre online grazie a GitHub Pages.</p>
+    <p>L'olio di Santina è ottenuto da olive locali selezionate, spremute a freddo.  
+       Qualità garantita, gusto autentico.</p>
   </section>
 
   <!-- OLIO -->
   <section id="olio">
-    <h2>🫒 Acquista il nostro olio</h2>
+    <h2>🫒 Acquista</h2>
     <p><strong>Prezzo base:</strong> 15 € / litro</p>
 
     <div class="griglia">
@@ -141,29 +143,15 @@
         <p>10 L – 150 €</p>
       </div>
     </div>
-
-    <p>
-      <a class="btn btn-whatsapp"
-         href="https://wa.me/393384461593?text=Vorrei%20ordinare%20OLIO%20DI%20SANTINA"
-         target="_blank">📲 Ordina su WhatsApp</a>
-      <a class="btn btn-email"
-         href="mailto:tuoindirizzo@email.com?subject=Ordine%20Olio%20di%20Santina&body=Vorrei%20ordinare"
-         target="_blank">✉️ Scrivimi una mail</a>
-    </p>
   </section>
 
   <!-- CONTATTI -->
   <section id="contatti">
     <h2>📞 Contatti</h2>
-    <p>Puoi contattarmi direttamente tramite:</p>
-    <p>
-      <a class="btn btn-whatsapp"
-         href="https://wa.me/393384461593?text=Vorrei%20ordinare%20OLIO%20DI%20SANTINA"
-         target="_blank">📲 Chat su WhatsApp</a>
-      <a class="btn btn-email"
-         href="mailto:tuoindirizzo@email.com?subject=Richiesta%20informazioni&body=Buongiorno,%20vorrei%20maggiori%20dettagli"
-         target="_blank">✉️ Mandami una mail</a>
-    </p>
+    <p>Ordina subito via WhatsApp:</p>
+    <a class="btn btn-whatsapp"
+       href="https://wa.me/393384461593?text=Vorrei%20ordinare%20OLIO%20DI%20SANTINA"
+       target="_blank">📲 Ordina su WhatsApp</a>
   </section>
 </main>
 
