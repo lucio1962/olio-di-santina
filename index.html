@@ -14,25 +14,34 @@
     }
     header {
       background: #fff;
-      padding: 20px;
+      padding: 25px 10px;
       border-bottom: 2px solid #2e7d32;
       position: sticky;
       top: 0;
     }
     h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.2em;
       color: black;
       font-weight: bold;
+      white-space: nowrap; /* evita che la foglia vada a capo */
     }
     section {
       padding: 20px;
     }
+    .descrizione {
+      font-size: 1.1em;
+      line-height: 1.6em;
+      max-width: 600px;
+      margin: auto;
+      text-align: justify;
+    }
     img {
-      max-width: 90%;
+      max-width: 95%;
       border: 1px solid #ccc;
       margin: 20px auto;
       display: block;
+      border-radius: 8px;
     }
     .btn {
       display: inline-block;
@@ -62,12 +71,22 @@
 
 <main>
   <section>
-    <p><strong>Prezzo:</strong> 15 € al litro</p>
+    <div class="descrizione">
+      <p><strong>Olio di Santina</strong>: extravergine artigianale con olive siciliane raccolte all’antica, spremuto a freddo e dal sapore autentico.  
+      La qualità di sempre, direttamente dalla nostra campagna alla tua tavola.</p>
+    </div>
+
+    <!-- FOTO ULIVETO -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Oliveto_in_Toscana.jpg" alt="Uliveto siciliano">
+
+    <!-- FOTO DELLE LATTINE -->
     <img src="lattine.jpg" alt="Lattine di olio">
+
+    <!-- BOTTONE WHATSAPP -->
     <p>
       <a class="btn btn-whatsapp"
-         href="https://wa.me/393384461593?text=Vorrei%20ordinare%20OLIO%20DI%20SANTINA"
-         target="_blank">📲 Ordina su WhatsApp</a>
+         href="https://wa.me/393384461593?text=Vorrei%20informazioni%20su%20OLIO%20DI%20SANTINA"
+         target="_blank">📲 Contattaci su WhatsApp</a>
     </p>
   </section>
 </main>
